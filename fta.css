@@ -1,0 +1,124 @@
+/* Style sheet for fTA.html */
+ body{
+    font-family: serif;
+    cursor: auto;
+    padding: 0;
+    }
+.top-bar {
+    background-color: burlywood;
+    position: fixed;
+    float: left;
+    top: 0;
+    left: 0;
+    right: 0;
+    }
+#logo {
+    margin-right: 10px;
+    position: relative;
+    float:right;
+    }
+button {
+    border: none;
+    background: none;
+    display: block;
+    background-color: burlywood;
+                
+}
+.dropdown-content { /*the menu dropdown content*/
+    display: none;
+    position: absolute;
+    background-color: #3E2723;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+    z-index: 1;
+}
+.dropdown-content a{ /*a selector for the links in the menu dropdown content*/
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {  /* a pseudo class for the links in the menu dropdown content. The background color changes when you hover on the links */
+    background-color: #ddd;
+}
+.dropdown:focus-within .dropdown-content { /*a pseudo class for the menu button which activates when you click on the button. When the menu button is clicked the dropdown content appears  */
+    display: block;
+}
+.login {
+    background-color: darkgray; 
+    margin: 0px 10px 10px 10px; 
+    border: 2px solid #000000; 
+    border-radius: 20px;
+    display: inline;
+}
+.dropdown-header {
+    background-color: lightgray;
+    margin-bottom: 10px
+}
+#menu-logo {
+    margin-top: 20px;
+    position: relative;
+    align-content: center;
+}
+.cancel {
+    background-color: lightgray;
+    float: right;
+    margin: 20px;
+}
+.cancel:focus-within .dropdown-content { /*this is just like the one on top (.dropdown:focus-within .dropdown-content). The dropdown content is supposed to disappear when i click it but it is not working. PLEASE HELP!!!*/
+    display: none;
+}
+.back-img {
+    background-image: url(Jollof-rice.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.name {
+    text-align: center;
+    font-family: cursive;
+    color: darkslateblue;
+    font-size: 100px;
+    margin-top: 0;
+    display: innline;    
+}
+.name::first-letter { /*a pseudo element for the class value "name". It changes the size of the first letter of that element */
+    font-size: 200px;
+}
+.ta {
+    display: inline-block;
+    margin: 0;
+}
+.ta::first-letter { /*a pseudo element for the class value "ta". It changes the size of the first letter of that element */
+    font-size: 150px;
+}
+#motto {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 0;
+}
+.chat {
+    background-color: #3E2723;
+    display: inline;
+    position: fixed;
+    bottom: 0;
+    left: 20;
+}
+.chat a { /*a class selector for the anchor tag that has a class value of chat  */
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+.footer { 
+    margin-top: 20px;
+    background-color: darkslategray;
+    color: aliceblue;
+    bottom: 0;
+}
+td>ul {
+     /*A child selector for all unordered list tag under the table data tag */
+    list-style-type: none;
+}
+li>b {
+    /*A child selector for all bold tag under the li tag */
+    color: #3E2723;
+}
